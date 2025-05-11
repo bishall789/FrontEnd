@@ -1,0 +1,32 @@
+
+body {
+  font-family: sans-serif;
+}
+a {
+    color: rgb(0, 51, 255); /* Standard blue for links */
+    text-decoration: none; /* Removes underline */
+    
+}
+
+a:visited {
+    color: blue; /* Neutral gray for visited links */
+}
+
+a:hover {
+    color: #28a745; /* Green when hovered (indicates interactivity) */
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+a:active {
+    color: #dc3545; /* Red when actively clicked */
+}
+
+img{
+    width: 100%;
+    max-width: 600px;
+}
+
+li {
+    margin-bottom: 15px; /* Adds gap between all list items */
+}
+
