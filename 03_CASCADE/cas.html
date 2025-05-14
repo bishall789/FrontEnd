@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASCADE</title>
+    <link rel="stylesheet" href="cas.css">
+</head>
+<body>
+
+    <h2 id="topic"> CASCADE , SPECIFITY AND INHERITENCE</h2>
+    <hr>
+    
+    <h2 id="cas" class="cas" style="background-color: brown;"> CASCADE </h2>
+
+    <div class="dk"> 
+        <p> Top to Bottom selector priority increase (top have least & bottom have highest priority.</p>
+        <p> The word "Cascading" in CSS means that when multiple styles apply to the same element, CSS follows a set of rules to decide which one should take effect. </p>
+       <p> 1️⃣ Order of Importance (What Comes First?) </p>
+       <p> CSS styles come from three main sources, and they are applied in this order: </p>
+        <dl>
+        <dt> 1. Inline Style</dt>
+        <dd> They have highest priority and can override Internal and External style</dd>  <br>
+
+        <dt> 2. Internal Style</dt>
+        <dd> They have medium priority and can override External style</dd> <br
+
+        <dt> 3. External Style</dt>
+        <dd> They have lowest priority and can be overridden by Inline and Internal style</dd> <br>
+ </dl>
+    <p> CASCADING -> In same style, Ex : <b> External Style </b>previous rules are overwritten by newer rules. </p>
+    <P> As we go down to style sheet, its priority keeps increasing</P>
+
+</div>
+
+<h2 id="spec"> SPECIFITY (Who Wins in a Conflict?) </h2>
+<div class="dd">
+  <p> If multiple rules target the same element, CSS uses a specificity ranking to determine the winner: </p>
+  <ul>
+    <li> Inline styles are the strongest.    </li>
+    <li> ID selectors (#id) are stronger than class selectors.    </li>
+    <li> Class selectors (.class) are stronger than element selectors (h1, p).    </li>
+    <li> If two rules have the same strength, the last one written wins.    </li>
+    <li> <b>  !important Overrides Everything    </b></li>
+  </ul>
+  </div>
+
+ <ol> 
+    <li> Inline Styles → 1000
+    </li>
+    <li> ID Selectors  (#id) → 100
+    </li>
+    <li> Class , Attribute, Pseudo-class Selectors (.class, [attr], :hover)  → 10
+    </li>
+    <li> Element Selectors  (p, h1, div) → 1
+    </li>
+    <li> Universal Selector (*) → 0</li>
+    <li> <b> !important → Overrides all specificity    </b></li>
+
+ </ol>
+    <div class="dd">
+    <p> <b> 4️⃣ Final Rule Application (How CSS Decides the Style)</b></p>
+    <ul>
+        <li>         CSS checks for !important rules (they override everything).
+        </li>
+        <li>         If no !important, CSS applies the most specific rule (ID > Class > Element).
+        </li>
+        <li>         If multiple rules have the same specificity, the last one written wins.
+
+    </ul>
+ </div>
+
+ <h2 id="spec"> INHERITANCE </h2>
+ <div class="dd">
+     <p> Some properties are automatically inherited , such as If we give any style in <b> Body</b> , then its children (p,h -. everything inside body) will get affected with style</p>
+     <P> not every property gets inherited , <b> Font related</b> property only gets inherited </P>
+ </div>
+
+
+</body>
+</html>
