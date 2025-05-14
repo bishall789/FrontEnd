@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <link rel="stylesheet" href="in.css">
+</head>
+<body>
+    
+    <h1> CSS BOX MODEL FOR INLINE ELEMENTS</h1>
+    <hr><hr>
+
+
+    <h3 id="co"> Width and Height in Block and Inline Element</h3>
+    <p style="background-color: aliceblue;"> <i> Block Element acts as a box despite how much long they are.</i></p>
+    <p style="background-color: aliceblue;"> <i> width and height can be set in block level elemenhs.</i></p>
+
+    <p> Block Eleemnt : Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad, eius? Incidunt nulla nisi laborum, earum doloribus adipisci officiis in tempore blanditiis molestiae voluptas placeat quam asperiores expedita labore natus! Eveniet ea nihil laudantium fuga dicta officiis voluptatem iure aliquam, libero rem, neque illo enim, corporis illum voluptate? Repudiandae dicta alias similique, officia nobis quam qui tempora, quia laudantium labore sint. Assumenda in soluta, explicabo quisquam quam voluptas magni laudantium consequatur saepe, repudiandae et nisi beatae obcaecati quas molestiae nesciunt dignissimos! Aspernatur vero odio quam nihil, error inventore officiis accusantium temporibus quidem unde, sapiente similique sint, asperiores ratione amet cupiditate nam? </p>
+    
+    <p style="background-color: aliceblue;"> <i> Inline Elemnt do not act as a box if they go on multiple lines.</i></p>
+    <p style="background-color: aliceblue;"> <i>width and height can not be set in inline level elemenhs. As they are auto , automatically gets increased as content filled up.
+    </i></p>
+  <span> Inline Element : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur vero expedita molestiae tempora id quia totam iusto cupiditate nulla unde cumque, sunt nihil, nam facere inventore eius consequuntur? Maiores dignissimos reiciendis magni, ullam totam quos tempora facere mollitia culpa itaque! Temporibus vero libero voluptates dolorum, quam dicta repellat est, delectus fugiat rem blanditiis possimus nesciunt cupiditate? Molestiae consectetur nisi sed, explicabo maiores rerum doloribus earum quis totam molestias tempora, ab deserunt non mollitia laudantium a eligendi minima necessitatibus soluta magni officiis laboriosam? Quam atque quasi accusantium, voluptatibus sint at impedit iste porro, modi vel nemo facilis distinctio maiores aliquid esse! </span>
+ <hr>
+ <h3 id="co"> Padding ,Border, Margin, Outline in Block and Inline Element</h3>
+ <h4 id="co"> <i> In inline Elemnt , Box properties works on left and right properly ,  while in top bottom they dont push elements instead gets over them </i></h4>
+ <h4 id="co"> <i> While In Block Elemnt , Box properties works on left , right and in top bottm they push elements -> dont get over them. </i></h4>
+
+ 
+ <div id="di"> Block : They never overlap other elements , they push them . </div>
+ <span id="sp"> Inline : When padding and border or other box properties gets increased , its comes over to other elements , rather than pushing them. </span>
+ <div id="di"> Block : Inline padding and border  or other box properties overlap other elements , rather than pushing them </div>
+ <span style="background-color: green; padding: 20px; margin:30px;"> Inline : When padding gets increased or other box properties  , its comes over to other elements , rather than pushing them. </span>
+ <br> <br> <hr> <hr>
+ <h3 id="co"> How to use block property in Inline Elements and vice-versa</h3>
+ <h3 id="co"> Use -> display:inline-block (this lets us to use both inline and block properties)</h3>
+
+    <div id="h"> Inline</div>
+    <div id="h"> Inline</div>
+    <div id="h"> Inline</div>
+    <div id="h"> Inline</div>
+<hr>
+<hr>
+<h3 id="co">Types of Inline Elements :</h3>
+<ol>
+    <li> Replaced Elements : Those who dont contain content (img ,iframe ,video tag) -> they show property of inline-block elements.</li>
+    <li>Non Replaced : Those who contain content (a,b,span) -> the show property of pure inline elements. </li>
+</ol>
+
+    
+</body>
+</html>

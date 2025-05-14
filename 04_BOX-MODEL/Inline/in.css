@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+}
+
+/* Width and Height in Block and Inline Element */
+
+#co{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 25px;
+
+}
+
+
+p{
+     background-color: green;
+     /* width: 300px;
+     height: 100px;
+     padding: 25px;
+     box-sizing: border-box;
+     border: 5px solid blue;
+     margin:40px; */
+}
+
+span{
+    background-color: brown;
+    /* width:300px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 5px solid blue;
+    margin:40px; */
+}
+
+/* Padding in Block and Inline Element */
+
+#di{
+    background-color: yellow;
+     width: 300px;
+    height: 100px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 5px solid blue;
+    margin:40px; 
+}
+
+#sp{
+    background-color: pink;
+    
+    padding: 50px;
+    box-sizing: border-box;
+    border: 5px solid blue;
+    margin:40px; 
+}
+
+#h{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 5px solid blue;
+    margin:40px; 
+}

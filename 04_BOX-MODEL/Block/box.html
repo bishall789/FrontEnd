@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Box Model CSS </h1>
+    <P> Some basic rules : </P>
+    <ol>
+        <li> width and height are dependent on each other.</li>
+        <li> To prevent <b> overflow</b> -> Avoid width and use max-width</li>
+        <li> To prevent <b> overflow</b> -> Avoid height and use min-height</li>
+        <li> Standard Way to use width and width is to use in percentage(%),</li>
+        <li>  When we give width 50% -> then it takes 50% of its parent width</li>
+        <li>  When we give height 50% -> then it takes 50% of its parent but only when its parent height is in absloute value (in px) </li>
+
+    </ol>
+
+<hr>
+<hr>
+<h1> <i> For Block Level Element</i></h1>
+<h3> 1. Padding (Padding and Border decides width of content)</h3>
+<p> When we write some content it makes a box, pading is used to make space between content and box</p>
+<p> padding is used to make space between content and border</p>
+<p style="background-color: rgb(197, 194, 194); padding: 30px;"> Example </p>
+
+<h3>2. Border</h3>
+<p> by default color of border is of text color, we can change that with border element</p>
+<p style="background-color: rgb(197, 194, 194); padding: 30px; border:10px solid black"> Example </p>
+<p style="background-color: rgb(197, 194, 194); padding: 30px; border:10px dotted black"> Example </p>
+
+<p ><b> Problem : box-sizing</b>: when we give widht to content, padding , margin gets added to widht making it more wider , so to deal with that we can use <b> box-sizing:border-box</b>-> now padding and margin will get incuded inside content widht making it same but content width will get compromised</p>
+<h3>3. Margin</h3>
+<p> To move box anywhere in viewport, Margin is used.</p>
+<p style="background-color: rgb(197, 194, 194); padding: 30px; border:10px solid black; margin:100px"> Example </p>
+ 
+<p> <b> border-radius</b>: This propety is used to make rounded corners in box, To make circle height and width must be same(square)</p>
+<p style="background-color: rgb(197, 194, 194); padding: 30px; border:10px solid black; margin:100px; border-radius:20px"> Example </p>
+
+<hr> <hr> <h3> Making photo frame</h3>  
+ <p id="img"> <img src="ht.jpeg" alt="image" id="a"> </p>
+ <hr> <hr>
+
+ <h3> Linear Gradient</h3>
+    <p> Linear Gradient is used to make gradient color in box</p>
+    <p> Such as : </p>
+    <p id="li">  </p>
+ 
+    
+</body>
+</html>
