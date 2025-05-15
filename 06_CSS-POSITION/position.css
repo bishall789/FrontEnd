@@ -1,0 +1,23 @@
+
+
+#top{
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+
+    
+}
+#subtopic{
+
+    background-color: rgb(184, 69, 21);
+    width: 400px;
+    text-align: center;
+
+}
+#learn{
+    background-color: aqua;
+    position: relative;
+    top:40px;
+    left:100px;
+ 
+}

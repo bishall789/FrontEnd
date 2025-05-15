@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS POSITION</title>
+    <link rel="stylesheet" href="position.css">
+</head>
+
+<h1 id="top"> CSS POSITION </h1> <hr> <hr>
+<h3 id="subtopic"> Static</h3>
+<p> By default , position is static .</p>
+
+<h3 id="subtopic"> Relative</h3>
+<ul> 
+    <li> It works by being based on its orignal positon</li>
+</ul>
+<p> When we set position relative , then we dont see any change untill we give value to top,left,right,bottom propert .</p>
+<p> <i> relative is based on its original positon </i></p>
+<p> Suppose if we give top:100px -> it moves element 100px below being based on original positionof element  or it will make 100px of gap betwwen element original top. ( it overlap anything which comes in between )  </p>
+<p> Original Place .. after giving top 40px and left 100px see where it goes below .. </p>
+     <h2 id="learn"> My Name is Bishal Bista.</h2>
+ <br><br> <br> <br> 
+     <h3 id="subtopic"> Absolute </h3>
+     <ul> 
+        <li> There are tw cases for absolute , how it works being absed on - </li>
+        <li> 1. Normally it gets attched to viewport when we use absoule psoition.</li>
+        <li> 2. Its gets attached to parent (it works being based on parent positon) if its any of the parent ,grandparent .. ..  have any other positon than static</li>
+    </ul>
+     <p> When we set position Absolute, then that element stays there but its height is not counted by browser (it acts like as disappear)</p>
+     <p> <i> Absolute is based on viewport </i></p>
+     <p> suppose if we give top:100px -> it moves element 100px below being based on viewport (it gets attached to viewport).</p>
+     <p> <b> But if we give parent position relative or any position other than static (it check if parent positon or grandparent positon is other than static -> then it gets attched to it which one comes first), and child position absolute at that time child absolute works on being based on parent position not on viewport <i> (its gets attched to parent not viewport)</i>
+     </b></p>
+     <p> Suppose in parent relative case , when we give child positon absolute and top 10px -> it will element 10px below from parent original position not viewport.</p>
+
+     <h3 id="subtopic"> Fixed </h3>
+     <ul> 
+        <li> 1. It gets attched to viewport , all other are same as absolute. ( it can go outside of the parent despite of being attached to parent same as relative)</li>
+    </ul>
+
+    <h3 id="subtopic"> Sticky </h3>
+    <ul> 
+       <li> 1. It gets attched to parent But ( it can't go outside of the parent ,   as Absolute,Fixed)</li>
+   </ul>
+   <p> We can make headers -> which do not change when we scroll content but header remains sticked to top.</p>
+   <p> chec out : <a href="./ex.html"> Click</a></p>
+   
+
+    
+</body>
+</html>
