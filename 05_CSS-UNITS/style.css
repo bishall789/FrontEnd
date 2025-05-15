@@ -1,0 +1,12 @@
+body{
+    margin:0px;
+}
+
+#tit{
+  background-color: red;
+}
+
+#units{
+    text-align: center;
+    font-size: 30px;
+}

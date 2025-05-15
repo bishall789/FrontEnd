@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS UNITS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="tit"> CSS UNITS</h1>
+    <hr> <hr>
+    <h3 id="units"> Percentage Units (%) </h3>
+    <p> In pecentage units : </p>
+    <i> % is based on parents property.</i>
+    <ul> 
+        <li> widht is based on parents width ( such as if widht is 50%, then its 50% of parent widht)</li>
+        <li> height is also based on parents height -> but this works only when somewhere above parents height is in px</li>
+        <li> padding and margin are also based on parents widht not padding and margin -> percentage unit doesnt works on boder</li>
+        <li> font-size is also bsaed on parent font size -> by default 16px</li>
+    </ul>
+    <hr> <hr>
+
+    <h3 id="units"> Viewport Width (vw) and Viewport Height(vh)</h3>
+    <h3> Viewport Width (VW)</h3>
+    <ul>
+        <li> VW units are based on the viewport's width.</li>
+        <li> 1vw is equal to 1% of the viewport width. So, if you set an element's width to 50vw, it will occupy 50% of the total width of the viewport, regardless of the parent element's size.</li>
+       <li> if the viewport is 1000 pixels wide, 50vw equals 500 pixels.</li>
+       <li> Note: VW units are not affected by parent width; they are solely based on the viewport.
+    </li>
+    </ul>
+
+    <h3> Viewport Height (VH)</h3>
+    <ul>
+        <li> VW units are based on the viewport's height.</li>
+        <li> 1vh is equal to 1% of the viewport height. So, if you set an element's height to 50vh, it will occupy 50% of the total height of the viewport, regardless of the parent element's size.</li>
+       <li> if the viewport is 1000 pixels tall, 50vw equals 500 pixels.</li>
+       <li> Note: VW units are not affected by parent elemtns; they are solely based on the viewport height.
+    </li>
+    </ul>
+<hr> <hr>
+ <h3 id="units"> em </h3>
+ <p> em -> depend on parents font size </p>
+ <p> suppose there is div and inside div there is section , on div font-size is 16px. Now if we set font-size on section 2em, it will take 1em=parents-font-size -> making font-size of section 32px ...  .. ..  . 
+    but if we set now width or padding inside section <b> 1em = section font-size </b> , meaning until font-size of current section is not updated it takes 1em=parents font-size but once its ownw font-size gets update then 1em=owns font-size.
+ </p>
+
+ <ul>
+    <li> 1. if we want to set font-size in em unit,it will consider his parent fontsize as 1em, according to that it will calculate the font size.
+    </li>
+
+    <li> 2. but, if we want to set padding,width etc in em unit, it will consider his own font-size as 1em, and calculate according to that.
+        </li>
+        <li>3. There is another unit called rem, it will consider html/root as 1rem, according to that it will calculate.
+
+        </li>
+ </ul> <hr> <hr> 
+<h3 id="units"> rem </h3>
+<p> rem -> depends on html/root font-size(by default 16px) only ,unlike em which depends on parents font-size .</p>
+
+</body>
+</html>
