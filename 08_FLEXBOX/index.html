@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="topic">Flexbox  </h1>
+    <hr>
+    <h2 class="heading"> max-content and min-content</h2>
+    <div class="theory">
+        <p> 2 thing necessary to understand Flexbox : </p>
+    <ol>
+        <li> width = max-content</li>
+        <p> If we set max-content , it shows all content in single line.</p>
+        <div class="parent">
+            <span>Hi, I am span.</span>
+            <p style="width: max-content;">Hi, I am paragraph. Lorem, ipsum ad </p>
+            <a href="/">Hi, I am an anchor tag.</a>
+
+        </div>
+        
+        <li> width = min width</li>
+        <p>If we set min-content, it takes width in reference longest word. </p>
+        <div class="parent">
+            <span>Hi, I am span.</span>
+            <p style="width: min-content;">Hi, I am paragraph. Lorem, ips eos, id quos cupiditate inventore deleniti rerum quae, asperiores rem suscipit voluptate recusandae a.</p>
+            <a href="/">Hi, I am an anchor tag.</a>
+        </div>
+    </ol>
+    <hr>
+    <h3> Flexbox</h3>
+    <p> When we use display flexbox in parent : </p>
+    <ol>
+        <li>It aligns its all child in single line</li>
+        <li>It makes its every child block element ( only child ok , its doesnt apply on grandchild )</li>
+    </ol>
+ <p>     Flexbox has :
+</p>
+    <ul>
+        <li> Flex Container : Its the whole area of flexbox </li>
+        <li>Flex Item : They are the items in flex Container</li>
+    </ul>
+
+    <div class="parent" style="display: flex;">
+        <span>Hi, I am span.</span>
+        <p >Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+        <a href="/">Hi, I am an anchor tag.</a>
+    </div>
+
+    <p> Here why p tag in aligining with other elements. Because p tags has by default margin so make it 0.</p>
+    <div class="parent" style="display: flex;">
+        <span>Hi, I am span.</span>
+        <p  style="margin: 0px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+        <a href="/">Hi, I am an anchor tag.</a>
+    </div>
+
+    <p> <b> Understand width in Flexbox , How Flexbox Shrinks element</b></p>
+    <p> So now we have three elements , span , p and a . We give them width of 200,300,400. They will take the full width only when there is 900 width available . If we have to shrink the width 10% , then 10% of width of all elements will be shrink ( It will shrink every elements equally) </p>
+    <div class="parent" style="display: flex;">
+        <span style="width: 200px;">Hi, I am span.</span>
+        <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+        <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+    </div>
+
+    <p> <b> This is how Flex container and Flex item works.</b></p> <hr> 
+    
+    
+
+
+    
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box property</title>
+    <link rel="stylesheet" href="flexproperty.css">
+</head>
+<body>
+
+    <h3> Now we talk about FlexBox property </h3>
+
+    <ol>
+        <li> flex-shrink : If we want to set  , specific element should shrink on our own we can use this property. When we give flex-shrink=0.5, then it will shrink that element 50% of the other element and if we give flex-shrink=0 to specific element it wont shrink (By default its 1)</li>
+        <li> flex-grow : If we want our empty space should be used by specifc element then we can give flex-grow=1, then that element will use remaining all empty space despite of its given width.(by default its value is 0)</li>
+        <div class="parent" style="display: flex; ">
+            <span style="width: 200px;">Hi, I am span.</span>
+            <p  style="margin: 0px;width: 300px; flex-grow: 1;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+            <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+
+        </div>
+        <p> In the above example we give , p flex-grow=1-> p will use other remaining space , while other elements will be according to their given width.</p>
+        <div class="parent" style="display: flex; ">
+            <span style="width: 200px;flex-grow: 1;">Hi, I am span.</span>
+            <p  style="margin: 0px;width: 300px; flex-grow: 1;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+            <a href="/" style="width: 400px;flex-grow: 1;">Hi, I am an anchor tag.</a>
+        </div>
+        <p> If we want our every elements should use equal space then we can use flex-grow in all element.</p>
+        <p> <b> Conclusion </b></p>
+        <p> 1. Flex-shrink can be used to prevent specific elements from shrinking in normal way.</p>
+        <p> 2. Flex-grow can be used to make specific elements to use remaining space.</p>
+        <li> Justify Content : If we want to center our whole flexbox , we can use Justify Content= Center property.</li>
+        <div class="parent" style="display: flex; justify-content: center;   ">
+            <span style="width: 200px; ">Hi, I am span.</span>
+            <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+            <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+ </div>
+
+ <li> Align-item : When we give height to parent even , then its all child gets those heights. Even if one element of flexbox get height then that height will be apply to all elements of flexbox , becaouse of align-items=stretch property</p> </li>
+ <div class="parent" style="display: flex; justify-content: center; ">
+    <span style="width: 200px; height:100px   ">Hi, I am span.</span>
+    <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+    <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+</div>
+<p> In above, height is given to span element and that height is applicaple to all its other elements as you can see.</p>
+<p> But if we want that height should be as given or accoring to its content , not height given to one element or ehight of parent should be applicable to all then we must set align-item=set-start. </p>
+<div class="parent" style="display: flex; justify-content: center; align-items: self-start; ">
+    <span style="width: 200px; height:100px">Hi, I am span.</span>
+    <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+    <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+</div>   
+<p> <i> As you can see , height was given to only span and its only applicable to span .</i></p>
+
+<li> To Center elements in flexbox </li>
+<ul>
+    <li> justify-content : It defined where to put flexbox elements whether at center , left or right.</li>
+    <li> align-items : It defined where to put flexbox elements whether at  top , center ,or bottom.</li>
+</ul>
+
+<p> When justify-content=center , align-item=self-start</p>
+<div class="parent" style="display: flex; justify-content: center;  align-items: self-start;  height:100px">
+    <span style="width: 200px; ">Hi, I am span.</span>
+    <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+    <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+</div>
+<p> When justify-content=center , align-item=center</p>
+
+<div class="parent" style="display: flex; justify-content: center;  align-items: center;  height:100px; ">
+    <span style="width: 200px; ">Hi, I am span.</span>
+    <p  style="margin: 0px;width: 300px; ">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+    <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+</div>
+<li> Justify-content=space between (mostly used) or space around or space evenly </li>
+<div class="aa">
+    <span> Hi demnde djn ejenc cjnc </span>
+    <h4> Hello</h4>
+    <p> Its okey </p>
+</div>
+<li> flex-direction : To play with elements , to put them vertically , horizontally , to put row elements in reversed way or to pur elements om column wise.</li>
+<p> If we use flex-direction: row-reverse , then its all elements will be reversed in terms of row</p>
+<div class="parent" style="display: flex; justify-content: space-between;  align-items:center;  height:100px; flex-direction: row-reverse;">
+    <span style="width: 200px; ">Hi, I am span.</span>
+    <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+    <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+</div>
+
+<p> If we use flex-direction: column , then elements will be set accordingly column wise.</p>
+<div class="parent" style="display: flex; justify-content: space-between;  align-items:center;  height:100px; flex-direction: column;">
+    <span style="width: 200px; ">Hi, I am span.</span>
+    <p  style="margin: 0px;width: 300px;">Hi, I am paragraph. Lorem, ips eos, id quos cupidits rem suscipit voluptate recusandae a.</p>
+    <a href="/" style="width: 400px;">Hi, I am an anchor tag.</a>
+</div>
+
+
+</ol>
+    </div>
+    
+</body>
+</html>
