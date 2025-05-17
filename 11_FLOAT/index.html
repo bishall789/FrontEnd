@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+            <h1> GeeksForGeeks</h1>
+            <p class="p"> A Computer Science Portal for Geeks</p>
+            <img src="./anglonepalesewar.png" alt="Images">
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ea sit. Labore, a neque fugit laudantium molestiae eveniet dolores nostrum nam ea praesentium veniam, dicta in aperiam non maiores. Ex voluptatum autem cum maxime maiores placeat, libero aut facere quam ullam mollitia qui sed id. Eos asperiores a, commodi nobis ad quibusdam eius assumenda dolor accusantium harum! At error incidunt consequuntur reiciendis aliquid tempora, cupiditate sunt ipsum earum odit necessitatibus et, ea quas deserunt dolorum itaque eveniet molestiae architecto ad nulla voluptates consequatur? Culpa exercitationem a, debitis reprehenderit harum adipisci, rem asperiores, quidem perferendis accusamus nesciunt inventore quibusdam. Consequatur perspiciatis ad assumenda nobis ut pariatur voluptatibus dolor reprehenderit! Amet quod ut, aspernatur ipsam exercitationem doloribus quos! Sed libero atque eveniet ipsam quaerat amet ullam exercitationem est explicabo necessitatibus, saepe asperiores ex. Laboriosam, magni? Maxime at provident,
+                cupiditate minus numquam ea rem reprehenderit excepturi, fugiat nam perspiciatis asperiores, ipsum mollitia quos?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel vitae veritatis quia, impedit, dolorem provident nostrum vero culpa ea voluptas accusantium temporibus aut maxime a doloremque, ut tenetur quam. Eaque iure, delectus ducimus officia quam maiores consequatur iusto, nesciunt voluptatibus voluptatem sunt eveniet dolor sed. Exercitationem placeat odio soluta maxime.
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati soluta provident ad sunt tenetur facilis natus quos nulla, corporis excepturi laboriosam ipsa libero ipsam quo architecto eos dolore ducimus porro blanditiis eveniet. Nesciunt qui numquam earum quos quis nihil incidunt facere libero magni optio. Perspiciatis suscipit aliquam eos deserunt quaerat voluptate necessitatibus doloremque quidem delectus mag
+            ni explicabo beatae, aperiam eius incidunt voluptates autem repellat quam illo perferendis assumenda adipisci dolore consequuntur! Ipsam iusto laudantium similique tempore. Beatae voluptate amet asperiores commodi labore. Eos, sint maxime quaerat minima atque iusto eligendi quo, nemo excepturi consequuntur dicta, facilis magnam magni laboriosam rem!</p>
+ </div>
+<hr>
+<h3> Float property</h3>
+ <p> This is the use of <b> float.</b></p>
+ <p> Main Difference between float and absolute is that when we give absolute then that elements acts as disapper that other sibling elements come to the positon of that element with absolute where as float also behave in a same way as absolute but it doesnt allow text to come at their own positon.</p>
+        
+    <div class="box color-red">1</div>
+    <div class="box color-green">2</div>
+    <div class="box color-blue">3</div>
+    <div class="box color-brown">4</div>
+
+    <p> <b> This is when we  use absolute</b></p>
+    <p> Below when use use absolute , red allow whole green and its text 2 to take over its positon.</p>
+        <div class="box color-red" style="position: absolute;">1</div>
+        <div class="box color-green">2</div>
+        <div class="box color-blue">3</div>
+        <div class="box color-brown">4</div>
+
+   
+    <p> <b> This is when we  use float</b></p>
+    <p> When we give float to Red , then i will allow to take its position to green but it wont allow text as you can see below <b> (Note : This works for an specific element, when we give float to whole container it acts in different way we will read below.) </b>
+        <p> One thing : Green text will appear only when its width is bigger than red. -> As red wont allow green text to come to its previos position.</p>
+        <div class="box color-red" style="float: left;">1</div>
+        <div class="box color-green">2</div>
+        <div class="box color-blue">3</div>
+        <div class="box color-brown">4</div>
+     
+
+        <h5> This is how float works when we apply float to whole container with multiple elements.</h5>
+
+
+     <div>
+        <div class="whole-box">
+            <div class="box color-red">1</div>
+            <div class="box color-green">2</div>
+            <div class="box color-blue">3</div>
+            <div class="box color-brown">4</div>
+        </div>
+     </div>
+
+
+        <h3> Clear property</h3>
+        <p> When we give clear property to green here then it dont allow any other floating elements in its left.</p>
+        <div>
+            <div class="whole-box">
+                <div class="box color-red" >1</div>
+                <div class="box color-green" style="clear: left;">2</div>
+                <div class="box color-blue">3</div>
+                <div class="box color-brown">4</div>
+            </div>
+         </div>
+</body>
+</html>
