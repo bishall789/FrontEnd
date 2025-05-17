@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIA </title>
+</head>
+<body>
+
+   <h2> MEDIA </h2>
+  
+   <p> In CSS, media helps us apply different styles based on the type of device or screen size. This is useful when designing responsive websites that work well on mobiles, tablets, laptops, and even for printing documents.</p>
+<h4> Types of Media : </h4>
+<ol>
+    <li> Screen :This is used for screens like mobiles, tablets, laptops, and desktops.
+        It allows us to change styles based on the screen size, resolution, or orientation (portrait/landscape). </li>
+    <li> Print : This is used when a webpage is printed on paper.
+        It removes unnecessary elements (like menus or ads) and adjusts fonts for better readability.</li>
+        <li> All : Combination of both</li>
+</ol>
+
+<p> <i> In media we can apply media as</i></p>
+<p> @media print { </p>
+    <p> .hello {</p>
+        <p> color:red;</p>
+        <p> }</p>
+    <p> }</p>
+    <p> This will change color to red of .square when printing</p> 
+
+<h2> Mostly Used Media Feautures and Queries</h2>
+<p> <b> (max-width:600px) -> Its is Media Feautures</b></p>
+<p> <i> Combinely Media types and Media features -> Media Queries</i></p>
+<p> <b> Automatically media type is all. If we want to add media type and media Features to make Media Queries ->  we can use <i> and </i> -> @Media print and (max-width:400px)</b></p>
+<div class="section">
+    <h3> 1. Width and Height </h3>
+    <p> @media (max-width: 600px) { </p>
+        <p> .hello {</p>
+            <p> color:red;</p>
+            <p> }</p>
+        <p> }</p>
+        <p> This will change color to red of square when , its width is less than 600px.</p>
+        <p> This is level 3 syantx of Media Queries.</p>
+</div>
+
+<br>
+    <p> @media (width <=600px) { </p>
+        <p> .hello {</p>
+            <p> color:red;</p>
+            <p> }</p>
+        <p> }</p>
+        <p> This will change color to red of square when , its width is less than 600px.</p>
+        <p> This is level 4 syantx of Media Queries(It is only supported by 75% of browsers).</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STACKING AND Z-INDEX</title>
+    <link rel="stylesheet" href="tyle.css">
+</head>
+<body>
+    <h1 class="topic"> STACKING AND Z - INDEX </h1>
+
+    <p> <b> In general STACKING works in normal way , the elements which is places at last will have highes value or it will be in top of other elements</b></p>
+    <p> As in given figure, red is placed first, green in second and blue in last.</p>
+    <div class="container">
+        <div class="box red-box">RED</div>
+        <div class="box green-box">GREEN</div>
+        <div class="box blue-box">BLUE</div>
+    </div>
+
+    <p style="margin-top: 200px;"> <b> We can bring any div to front of other in 2 ways : </b></p>
+    <ol>
+    <li> Using position other than static (by Default its static) -> So in this case red eleement has position while green and  blue has not.</li>
+    <div class="container" ">
+        <div class="box red-box" style="position: relative;">RED</div>
+        <div class="box green-box">GREEN</div>
+        <div class="box blue-box">BLUE</div>
+    </div>
+    <li style="margin-top: 200px;" > Using Z-Index : The element with higher z-index will be shown on top or front. <b> (By default Z-INDEX is auto ( 0 ))</b></li>
+    <p> In this case , all element RED , GREEN and BLUE has position but Red has Z-index = 10 , Green has Z-index = 5 and blue has Z-index = 2.</p>
+    <p> SO Red will be on front and then green and on back blue will be.</p>
+    <div class="container" ">
+        <div class="box red-box" style="position: relative; z-index: 10;">RED</div>
+        <div class="box green-box" style="position: relative; z-index: 5;">GREEN</div>
+        <div class="box blue-box" style="position: relative; z-index: 2;">BLUE</div>
+    </div>
+</ol>
+
+</body>
+</html>
