@@ -1,0 +1,78 @@
+.topic{
+    text-align:center;
+    color:green;
+    font-size:50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img{
+    widht:500px;
+    height:500px;
+}
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px;
+    grid-template-rows: repeat(3,150px);
+}
+
+.box{
+    color:white;
+    font-size:6rem;
+  
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    background-color: lightblue;
+  }
+  
+  .box {
+    color: white;
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  
+  .box-1 {
+    background-color: green;
+    
+  }
+  
+  .box-2 {
+    background-color: blueviolet;
+  }
+  
+  .box-3 {
+    background-color: blue;
+  }
+  
+  .box-4 {
+    background-color: brown;
+  }
+  
+  .box-5 {
+    background-color: coral;
+   
+  }
+  
+  .box-6 {
+    background-color: darkblue;
+  }
+  
+  .box-7 {
+    background-color: darkred;
+  }
+  
+  .box-8 {
+    background-color: darkslategray;
+  }
+  
+  .box-9 {
+    background-color: gray;
+  }
+  
+  .box-10 {
+    background-color: navy;
+  }

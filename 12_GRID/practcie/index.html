@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="topic"> GRID </h1>
+
+    <img src="./Screenshot (66).png" alt="img">
+    <p> Grid and Flexbox both are parent controlled property , in which elements are controlled by parent.</p>
+    <p> In Grid we use 2 property to specify grid rows and columns given below and each elements insdie grid will occupy each grid selve. </p>
+    <ol>
+       <li>     grid-template-rows: repeat(3,150px); -> This will make 3 rows with 150px .
+     </li>
+     <li>     grid-template-columns: 150px 150px 150px 150px 150px; -> This will make 5 columns with 150px.
+    </li>
+    </ol>
+
+    <p> Other ways to give grid-template-columns and   grid-template-rows are : using % , fr , autofill. </p>
+    <ol>
+        <li> grid-template-columns:repeat(3,30%); -> This will make 3 columns with 30% of width out of 100% width, similary for rows also.</li>
+        <li> grid-template-columns:repeat(3,1fr); -> This will make 3 columns dividing total width into equal 3 sections.</li>
+        <li> grid-template-columns:repeat(auto-fill, 100px); -> This will divide entire width into 100px column how much width is available.</li>
+        <li> grid-template-columns:repeat(auto-fill, min-max(120px , 1fr)); -> This will give min of 120px and max of 1fr to every element on based of available width.</li>
+    </ol>
+    <div class="container">
+        <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <div class="box box-7">7</div>
+      <div class="box box-8">8</div>
+      <div class="box box-9">9</div>
+      <div class="box box-10">10</div>
+      
+        
+    </div>
+
+    <p> We can move any grid element to any grid sleve by specifying grid column start or grid row start. </p>
+        <p> So Below , there are 3 rows and 5 columns ( There require 2 lines to make 1 row or column grid sleve) , if i want to move first grid element to last grid sleve then i must specify its grid column start.  </p>
+        <ol> 
+            <li> grid-column-start:; -> This will move grid element to grid sleve 5 in column</li>
+            <li> grid-row-start:3; -> This will move grid element to grid sleve 3 in row<</li>
+            <li> We can use these both properties to move grid element to specific column and row at a sme time</li>
+        </ol>
+
+        <p> Similary we can use grid-column-end and grid-row-end property. In which we can specify </p>
+        
+    <div class="container">
+        <div class="box box-1" style="grid-column-start: 5;">1</div>
+        <div class="box box-1" style="grid-row-start: 3;">2</div>
+        <div class="box box-1" style="grid-row-start: 3;grid-column-start: 5;">3</div>
+     </div>
+
+     <p> Similarly we can use both start and end property at same time to make grid element stretch to multiple grid sleve.</p>
+     <div class="container">
+        <div class="box box-1" style="grid-column-start: 3; grid-row-start:2;grid-column-end:6;grid-row-end:4;display:flex;justify-content: center;align-items: center;">1</div>
+        
+     </div>
+     <p> Also we can use <b> span property for above task</b></p>
+   
+     <p> We have starting point of grid sleeve , then we give as grid-column-start:span 2 - this will expand over 2 grid sleev in column and similarly we can give row to expan over rows and columns. If we want to move whole then we can give it end so that it move to that specific. </p>
+     <hr>
+     <p> Now if we want to move 1 to place of 4 </p>
+     <p> We can use grid-column-start:4</p>
+     <div class="container">
+        <div class="box box-1" >1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <div class="box box-7">7</div>
+      <div class="box box-8">8</div>
+      <div class="box box-9">9</div>
+      <div class="box box-10">10</div>
+      
+        
+    </div>
+
+    <div class="container">
+        <div class="box box-1" style="grid-column-start: 4;">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <div class="box box-7">7</div>
+      <div class="box box-8">8</div>
+      <div class="box box-9">9</div>
+      <div class="box box-10">10</div>
+
+     </div>
+
+     <p> When we do column then it pushes other elements , so whats the solution :  </p>
+     <p> There are 2 ways to solve it: </p>
+     <ul>
+      <li> Either use grid-auto-flow:row dense in parent.</li>
+      <li> Or use grid-row-start in child with grid-column-start to ensure elements are not pushed.</li>
+     </ul>
+  <div class="container" style="grid-auto-flow: row dense;"> <div class="box box-1" style="grid-column-start: 4;">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <div class="box box-6">6</div>
+  <div class="box box-7">7</div>
+  <div class="box box-8">8</div>
+  <div class="box box-9">9</div>
+  <div class="box box-10">10</div></div>
+
+     <p>  we can use grid-row-start it doesnt pushes elements. lets do grid-row-start: 2; -> It moves 1 in place of 6 and if we do grid-column-start:4 -> It now doesnt push other elements it simply goes to column 4 and row 2 .</p>
+     <div class="container">
+       <div class="box box-1" style="grid-row-start: 2;grid-column-start: 4;">1</div>
+     <div class="box box-2">2</div>
+     <div class="box box-3">3</div>
+     <div class="box box-4">4</div>
+     <div class="box box-5">5</div>
+     <div class="box box-6">6</div>
+     <div class="box box-7">7</div>
+     <div class="box box-8">8</div>
+     <div class="box box-9">9</div>
+     <div class="box box-10">10</div>
+     
+       
+   </div>
+
+   <p> <b> When multple element are in grid -> To move specific grid sleve we can use row start as it doesnt pushes other elements with column start, or we can use grid-auto-flow:row dense; in parent.</b></p>
+    
+
+   
+   
+     
+    </body>
+</html>

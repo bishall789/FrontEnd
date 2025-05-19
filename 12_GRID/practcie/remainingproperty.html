@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remaining Property of Grid</title>
+    <link rel="stylesheet" href="rem.css">
+</head>
+<body>
+
+    <h1 class="topic">Remaining Property of Grid</h1>
+<p> We will discuss about 4 remaining property : </p>
+<ol> 
+    <li> grid-auto-flow -> By default its row</li>
+    <li> grid-auto-rows -> By default its auto</li>
+    <li> grid-auto-columns -> By default its auto</li>
+    <li> grid-template-areas -> By default its none</li>
+
+
+</ol>
+
+<p> When we set grid-auto-flow:column;</p>
+
+    <div class="container">
+        <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <div class="box box-7">7</div>
+      <div class="box box-8">8</div>
+      <div class="box box-9">9</div>
+      <div class="box box-10">10</div>
+    </div>
+<p> As you can see ,we only defined 4 columns , but when se set grid-auto-flow:column -> it put every grid elements in column wise but other than 4 defined coluns width is not fixed it is automatically set by browser.</p>    
+<p> So to handle this we use grid-auto-columns:100px, now it will give 100px to eveery other extra columns than defined.</p>
+<div class="container" style="grid-auto-columns: 100px;">
+    <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <div class="box box-6">6</div>
+  <div class="box box-7">7</div>
+  <div class="box box-8">8</div>
+  <div class="box box-9">9</div>
+  <div class="box box-10">10</div>
+</div>
+
+<p>Similaryly we can use grid-auto-rows.</p>
+
+<p>
+To center grid element inside grid sleve we can use align-items and justify-items center inside grid. Similarly we can use other flex box properties but remember it works ona  parent based meaning it is given on parent and works for all child.</p>
+
+<p> It see single grid sleve as flexbox and grid element inside it as a flex container.</p>
+<div class="container" style="grid-auto-flow:row; align-items:  center;justify-items: center;">
+    <div class="box box-1">1</div>
+  <div class="box box-2">2</div>
+  <div class="box box-3">3</div>
+  <div class="box box-4">4</div>
+  <div class="box box-5">5</div>
+  <div class="box box-6">6</div>
+  <div class="box box-7">7</div>
+  <div class="box box-8">8</div>
+  <div class="box box-9">9</div>
+  <div class="box box-10">10</div>
+</div>
+
+<p> <b> To move specific grid element inside gird sleve we can use margin property , when we need to deal with all grid element then we use flexbox property at parent.</b></p>
+<hr>
+
+<h1 class="topic"> grid-template-areas</h1>
+<p> In grid-template-areas -> We can define rows and columns with name instead of numbers.</p>
+<p> Previously we used to give star and end of rows and columns but in gris-template-areas -> we can use shortcut.</p>
+<p> grid-row:Banglore -> This will be applicable for both start and end similarly we can do for grid-column.</p>
+<p> More shortcut property -> grid-area:Banglore , this will applicable for both rows and columns start and end.</p>
+<p> Meaning it will coevr every grid sleve where there is banglore.</p>
+<p> <b> Note : It will only works when its forms a square or rectangle.</b></p>
+
+<div class="containerr" style="    
+min-height: 60vh; grid-template-areas: 'Banglore Banglore Delhi' 'Banglore Banglore Delhi''Mumbaie Mumbaie Pune';">
+
+<div class="box box-1" style="grid-area: Banglore; display:flex; align-items: center; justify-content: center;">1</div>
+<div class="box box-2" style="grid-area:Delhi;">2</div>
+<div class="box box-3">3</div>
+
+</div>
+</body>
+</html>
