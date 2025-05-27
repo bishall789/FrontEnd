@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <h1> Decision Making Statements in JS</h1>
+    <h2>if statement</h2>
+    <p>if statement is used to execute a block of code if a specified condition is true.</p>
+    <p>Syntax:</p>
+    <pre>
+        if (condition) {
+            // code to be executed if condition is true
+        }
+    </pre>
+    <p>Example:</p>
+    <pre>
+        let age = 18;
+        if (age >= 18) {
+            console.log("You are an adult.");
+        }
+    </pre>
+    <h2>if...else statement</h2>
+    <p>if...else statement is used to execute one block of code if a specified condition is true and another block of code if it is false.</p>
+    <p>Syntax:</p>
+    <pre>
+        if (condition) {
+            // code to be executed if condition is true
+        } else {
+            // code to be executed if condition is false
+        }
+
+    </pre>
+    <p>Example:</p>
+    <pre>
+        let age = 16;
+        if (age >= 18) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are not an adult.");
+        }
+    </pre>
+    <h2>if...else if...else statement</h2>
+    <p>if...else if...else statement is used to specify a new condition to test if the first condition is false.</p>
+    <p>Syntax:</p>
+    <pre>
+        if (condition1) {
+            // code to be executed if condition1 is true
+        } else if (condition2) {
+            // code to be executed if condition2 is true
+        } else {
+            // code to be executed if both condition1 and condition2 are false
+        }
+
+    </pre>
+    <p>Example:</p>
+    <pre>
+        let age = 20;
+        if (age < 13) {
+            console.log("You are a child.");
+        } else if (age < 20) {
+            console.log("You are a teenager.");
+        } else {
+            console.log("You are an adult.");
+        }
+    </pre>
+
+        <h2> Switch Statement </h2>
+
+        <p>Switch statement is used to perform different actions based on different conditions.</p>
+        <p>Syntax:</p>
+        <pre>
+            switch (expression) {
+                case value1:
+                    // code to be executed if expression === value1
+                    break;
+                case value2:
+                    // code to be executed if expression === value2
+                    break;
+                default:
+                    // code to be executed if expression doesn't match any case
+            }
+        </pre>
+        <p>Example:</p>
+        <pre>
+            let day = 3;
+            switch (day) {
+                case 1:
+                    console.log("Monday");
+                    break;
+                case 2:
+                    console.log("Tuesday");
+                    break;
+                case 3:
+                    console.log("Wednesday");
+                    break;
+                default:
+                    console.log("Not a valid day");
+            }
+        </pre>
+        <h2> Ternary Operator </h2>
+        <p>The ternary operator is a shorthand for the if...else statement. It takes three operands and is often used as a shortcut for the if statement.</p>
+        <p>Syntax:</p>
+        <pre>
+            condition ? expression1 : expression2;
+        </pre>
+        <p>Example:</p>
+
+        <pre>
+            let age = 18;
+            let status = (age >= 18) ? "You are an adult." : "You are not an adult.";
+            console.log(status);
+        </pre>
+        <h2> Conclusion </h2>
+        <p>In this lesson, we learned about different decision-making statements in JavaScript. We covered the if statement, if...else statement, if...else if...else statement, switch statement, and the ternary operator. These statements are essential for controlling the flow of a program based on conditions.</p>
+        <p>Understanding these statements will help you write more complex and dynamic JavaScript code.</p>
+        <h2> Quiz </h2>
+        <p>1. What is the purpose of the if statement in JavaScript?</p>
+        <p>2. How does the switch statement differ from the if...else statement?</p>
+        <p>3. What is the syntax of the ternary operator?</p>
+        <p>4. Write a code snippet using the if...else statement to check if a number is even or odd.</p>
+        <p>5. Write a code snippet using the switch statement to print the name of the month based on the month number (1-12).</p>
+        <p>6. Write a code snippet using the ternary operator to check if a number is positive or negative.</p>
+        <p>7. Write a code snippet using the if...else if...else statement to check the grade of a student based on their score.</p>
+        <p>8. Write a code snippet using the switch statement to print the name of the day based on the day number (1-7).</p>
+        <p>9. Write a code snippet using the if statement to check if a number is greater than 10.</p>
+
+    
+</body>
+</html>
