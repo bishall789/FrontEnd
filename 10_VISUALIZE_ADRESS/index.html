@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scrit.js"></script>
+</head>
+<body>
+
+    <h1> Non Primitive Data Types</h1>
+    <hp> There is 1 types of NPDT : </hp>
+    <ol>
+        <li> Object </li>
+    </ol>    
+
+    <p> Obejct is divided into 3 categories :</p>
+    <ol>
+        <li> Object Literal </li>
+        <li> Arrays </li>
+        <li> Functions </li>
+    </ol>
+
+    <h2> Object Literal</h2>
+    <p> Object Literal is a collection of key-value pairs. </p>
+    <p> Syntax : </p>
+    <p> var objectName = { key1 : value1, key2 : value2, key3 : value3 } </p>
+    <p> Example : </p>
+    <p> var person = { name : "John", age : 30, city : "New York" } </p>
+    <p> To access the value of a key, we can use dot notation or bracket notation. </p>
+    <p> Example : </p>
+    <p> person.name // John </p>
+    <p> person["age"] // 30 </p>
+    <p> To add a new key-value pair, we can use dot notation or bracket notation. </p>
+    <p> Example : </p>
+    <p> person.country = "USA" </p> 
+    <p> person </p>
+    <p> To delete a key-value pair, we can use the delete operator. </p>
+    <p> Example : </p>
+    <p> delete person.age </p>
+    <p> person </p>
+    <p> To check if a key exists, we can use the in operator. </p>
+    <p> Example : </p>
+    <p> "name" in person // true </p>
+    <p> "age" in person // false </p>
+    <p> To get the keys of an object, we can use the Object.keys() method. </p>
+    <p> Example : </p>
+    <p> Object.keys(person) // ["name", "city", "country"] </p>
+    <p> To get the values of an object, we can use the Object.values() method. </p> 
+    <p> Example : </p>
+    <p> Object.values(person) // ["John", "New York", "USA"] </p>
+
+
+
+
+    <h1> Objectseal() vs Objectfreeze()</h1>
+    <p> Objectseal() : </p>
+    <p> It prevents the addition or deletion of properties from an object. </p>
+    <p> It allows the modification of existing properties. </p>
+    <p> Example : </p>
+    <p> var person = { name : "John", age : 30, city : "New York" } </p>
+    <p> Object.seal(person) </p>
+    <p> person.name = "Jane" </p>
+    <p> person.age = 25 </p>
+    <p> person.country = "USA" </p>
+    <p> person // { name : "Jane", age : 25, city : "New York" } </p>
+    <p> Objectfreeze() : </p>
+    <p> It prevents the addition, deletion or modification of properties from an object. </p>
+    <p> Example : </p>          
+    <p> var person = { name : "John", age : 30, city : "New York" } </p>
+    <p> Object.freeze(person) </p>
+    <p> person.name = "Jane" </p>
+    <p> person.age = 25 </p>
+    <p> person.country = "USA" </p>
+    <p> person // { name : "John", age : 30, city : "New York" } </p>
+    <p> Object.seal() vs Object.freeze() : </p>
+    <p> Object.seal() allows the modification of existing properties, while Object.freeze() does not. </p>
+    <p> Object.seal() prevents the addition or deletion of properties, while Object.freeze() prevents the addition, deletion or modification of properties. </p>
+ 
+
+    <h1> Array</h1>
+    <p> An array is a collection of elements. </p>
+    <p> Syntax : </p>
+    <p> var arrayName = [ element1, element2, element3 ] </p>
+    <p> Example : </p>
+    <p> var fruits = [ "apple", "banana", "orange" ] </p>
+    <p> To access an element of an array, we can use the index of the element. </p>
+    <p> Example : </p>
+    <p> fruits[0] // "apple" </p>
+    <p> fruits[1] // "banana" </p>
+    <p> To add a new element to an array, we can use the push() method. </p>
+    <p> Example : </p>
+    <p> fruits.push("grape") </p>
+    <p> fruits // [ "apple", "banana", "orange", "grape" ] </p>
+    <p> To remove the last element of an array, we can use the pop() method. </p>
+    <p> Example : </p>
+    <p> fruits.pop() </p>
+    <p> fruits // [ "apple", "banana", "orange" ] </p>
+    <p> To remove the first element of an array, we can use the shift() method. </p>
+    <p> Example : </p>
+    <p> fruits.shift() </p>
+    <p> fruits // [ "banana", "orange" ] </p>
+    <p> To add a new element to the beginning of an array, we can use the unshift() method. </p>
+    <p> Example : </p>
+    <p> fruits.unshift("apple") </p>
+    <p> fruits // [ "apple", "banana", "orange" ] </p>
+    <p> To remove an element from a specific index, we can use the splice() method. </p>
+    <p> Example : </p>
+    <p> fruits.splice(1, 1) </p>
+    <p> fruits // [ "apple", "orange" ] </p>
+    <p> To get the length of an array, we can use the length property. </p>
+    <p> Example : </p>
+    <p> fruits.length // 2 </p>
+    <p> To check if an element exists in an array, we can use the indexOf() method. </p>
+    <p> Example : </p>
+    <p> fruits.indexOf("banana") // -1 </p>
+    <p> fruits.indexOf("apple") // 0 </p>
+    <p> To get the last element of an array, we can use the length property. </p>
+    <p> Example : </p>
+    <p> fruits[fruits.length - 1] // "orange" </p>
+    <p> To get the first element of an array, we can use the index 0. </p>
+    <p> Example : </p>
+    <p> fruits[0] // "apple" </p>  
+</body>
+</html>
