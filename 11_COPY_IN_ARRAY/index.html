@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scr.js"></script>
+</head>
+<body>
+    <h1> Copy in Array and Objects</h1>
+    <h2> Shallow copy</h2>
+    <p>Shallow copy is a bitwise copy of an object. It means that the new object is created with the same properties as the original object, but the properties are not copied by reference. Instead, they are copied by value. This means that if you change a property in the new object, it will not affect the original object.</p>
+    <p> Example : </p>
+    <p> Ways to copy </p>
+
+    <ul>
+        <li> Spread operator (...) </li>
+        <li> Array.from() </li>
+        <li> slice()</li>
+        </ul>
+
+        <h2> Deep copy</h2>
+        <p>Deep copy is a bitwise copy of an object. It means that the new object is created with the same properties as the original object, but the properties are copied by reference. This means that if you change a property in the new object, it will also affect the original object.</p>
+        <p> Example : </p>
+        <p> Ways to copy </p>
+        <ul>
+            <li> JSON.parse(JSON.stringify()) </li>
+            <li> Lodash cloneDeep() </li>
+            <li> structuredClone()  <b> (Most Recommeded and Modern)</b></li>
+        </ul>
+   
+
+        </body>
+        </html>
